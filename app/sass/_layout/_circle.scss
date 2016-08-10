@@ -1,0 +1,187 @@
+*{
+  box-sizing: border-box;
+}
+
+.diagram__wrapper {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ring{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 30px solid #eeeeee;
+}
+
+.first-quarter {
+  border-radius: 145px 0 0 0;
+  border-bottom: none;
+  border-right: none;
+}
+
+.second-quarter {
+  left: 50%;
+  border-radius: 0 145px 0 0;
+  border-bottom: none;
+  border-left: none;  
+}
+
+.third-quarter {
+  left: 50%;
+  top: 50%;
+  border-radius: 0 0 145px 0;
+  border-top: none;
+  border-left: none;
+}
+
+.fourth-quarter {
+  top:50%;
+  border-radius: 0 0 0 145px;
+  border-top: none;
+  border-right: none;
+}
+
+.info {
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  border-radius: 145px;
+  background-color: transparent;
+  border: 30px solid transparent;
+  z-index: 20;
+  box-shadow: 
+    inset 0 4px 8px 0 rgba(0, 0, 0, 0.14),
+    0 4px 8px 0 rgba(0, 0, 0, 0.14);
+}
+
+.wrapper_desk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.persent {
+  font-size: 20px;  
+}
+
+.third-quarter--blue {
+  border-color: #00aeef;
+  transform-origin: left top;
+  transform: rotate(10deg);
+  animation-name: ring-blue;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;  
+}
+
+.third-quarter--second-blue{
+  transform: rotate(90deg);
+  animation-name: ring-blue-second;
+}
+
+.second-quarter--lgreen {
+  border-color: #d7df21;
+  transform-origin: left bottom;
+  transform: rotate(40deg);
+  animation-name: ring-lgreen;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animate-delay: 0.3s;
+}
+.second-quarter--second-lgreen {
+   transform: rotate(100deg);
+}
+
+.second-quarter--repeat-lgreen {
+  animation-name: ring-lgreen-second;
+}
+
+.third-quarter--third-blue {
+  transform: rotate(-35deg);
+  animation-name: ring-blue-third;
+}
+
+.second-quarter--green {
+  border-color: #8cc63f;
+  transform-origin: left bottom;
+  transform: rotate(-40deg);
+  animation-name: ring-green;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animate-delay: 0.5s;
+}
+
+@keyframes ring-blue{
+  from{ transform: rotate(-180deg); }
+  to{ transform: rotate(10deg); }
+}
+
+@keyframes ring-blue-second{
+  from{ transform: rotate(-180deg); }
+  to{ transform: rotate(90deg); }
+}
+
+@keyframes ring-blue-third{
+  from{ transform: rotate(-180deg); }
+  to{ transform: rotate(-35deg); }
+}
+
+@keyframes ring-lgreen{
+  from{ transform:  rotate(-90deg); }
+  to{ transform: rotate(40deg); }
+}
+
+@keyframes ring-lgreen-second{
+  from{ transform:  rotate(-90deg); }
+  to{ transform: rotate(100deg); }
+}
+
+@keyframes ring-green{
+  from{ transform:  rotate(-90deg); }
+  to{ transform: rotate(-40deg); }
+}
+
+.diagram__row {
+  @include clearfix;
+}
+
+.target{
+  width: 33.333333%;
+  height: 350px;
+  position: relative;
+  float: left;
+}
+
+.target__top{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.target__bottom{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.target__right {
+  position: absolute;
+  right: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.target__left {
+  position: absolute;
+  left: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+}

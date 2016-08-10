@@ -1,0 +1,23 @@
+.strip{
+  width: 83.49%;
+}
+.strip__row{
+  @include clearfix;
+}
+.strip__cel {
+  width: 11.111111%;
+  height: 1.875rem;
+  margin: 1.25rem 0;
+  background: #eeeeee;
+  float: left;
+  box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.14);
+  &:after{
+    content: '';
+    border-left: 1px dotted #4c4d4d;
+    font-size:69px;
+    line-height: 30px;
+    z-index: -1;
+    position: relative;
+
+  }
+}

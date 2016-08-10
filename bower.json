@@ -1,0 +1,17 @@
+{
+  "name": "elar",
+  "authors": [
+    "Jolja06 <elena.an.92@gmail.com>"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~4.2.0"
+  }
+}

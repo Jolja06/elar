@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="ru RU")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width")
+    title Diagram
+    // build:css css/vendor.css
+    link(href="bower/normalize-css/normalize.css" rel="stylesheet")
+    // endbuild
+    // build:css css/main.css
+    link(href="css/main.css" rel="stylesheet")
+    // endbuild
+  body
+    .wrapper
+      include _includes/_circle-diagram
+      include _includes/_strip-diagram
+      include _includes/_column-chart
