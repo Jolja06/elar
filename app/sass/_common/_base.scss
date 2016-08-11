@@ -1,7 +1,48 @@
 *{
   box-sizing: border-box;
 }
+body{
+  font-family: 'Arial';
+  font-style: normal;
+  width: 100%;
+  min-width: 1260px;
+}
 .wrapper {
-  max-width: 100%;
-  margin: 3.125rem 8%;
+  width: 100%;
+  padding: 3.125rem 8%;
+  min-width: 1260px;
 } 
+.diagram__title {
+  font-size: 33px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.diagrm__title--center{
+  font-size: 48px;
+  text-align: center;
+}
+.diagram__subtitle {
+  color: #11aaea;
+  font-size: 24px;
+  padding-bottom: 22px;
+}
+.diagram__subtitle--center {
+  text-align: center;
+}
+.diagram__desc {
+  font-size: 16px;
+  color: #6a6b6b;
+  border-bottom: 1px dotted #6a6b6b;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.diagram__desc--center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.diagram__row{
+  margin-bottom: 60px;
+}

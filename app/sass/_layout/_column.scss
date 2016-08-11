@@ -1,0 +1,203 @@
+.diagram__column{
+  width: 23.3%;
+  margin-left: 1.7%;
+  float: left;
+  border-radius: 14px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.14);
+  position: relative;
+  margin-top: 15px;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+
+.diagram__column__title {
+  background: #eeeeee;
+  border-radius: 14px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 1.25rem;
+}
+
+.chart {
+  text-align: right;
+  height: 29px;
+  line-height: 29px;
+  border-radius: 0 6px 6px 0;  
+  margin-bottom: 0.625rem;
+}
+
+.chart__blue {
+  background: #0077e0;
+  background: -moz-linear-gradient(left, #0077e0 0%, #00d3f7 100%);
+  background: -webkit-linear-gradient(left, #0077e0 0%,#00d3f7 100%);
+  background: linear-gradient(to right, #0077e0 0%,#00d3f7 100%);
+  width: 91%;
+  animation: chart-blue 1s;
+}
+
+.chart__green {
+  background: #4e9b11;
+  background: -moz-linear-gradient(left, #4e9b11 0%, #bce07d 100%);
+  background: -webkit-linear-gradient(left, #4e9b11 0%,#bce07d 100%);
+  background: linear-gradient(to right, #4e9b11 0%,#bce07d 100%);
+  width: 32.4%;
+  animation: chart-green 1s;
+}
+
+.chart__lgreen {
+  background: #b5c304;
+  background: -moz-linear-gradient(left, #b5c304 0%, #e9ee58 100%);
+  background: -webkit-linear-gradient(left, #b5c304 0%,#e9ee58 100%);
+  background: linear-gradient(to right, #b5c304 0%,#e9ee58 100%);
+  width: 16.99%;
+  animation: chart-lgreen 1s;
+}
+
+.chart__orange {
+  background: #f97910;
+  background: -moz-linear-gradient(left, #f97910 0%, #fdd37e 100%);
+  background: -webkit-linear-gradient(left, #f97910 0%,#fdd37e 100%);
+  background: linear-gradient(to right, #f97910 0%,#fdd37e 100%);
+  width: 26.87%;
+  animation: chart-orange 1s;
+}
+
+.chart__pink {
+  background: #e22a6c;
+  background: -moz-linear-gradient(left, #e22a6c 0%, #f7a0cd 100%);
+  background: -webkit-linear-gradient(left, #e22a6c 0%,#f7a0cd 100%);
+  background: linear-gradient(to right, #e22a6c 0%,#f7a0cd 100%);
+  width: 32%;
+  margin-bottom: 1.875rem;
+  animation: chart-pink 1s;
+}
+
+.legend {
+  position: absolute;
+  right: 4%;
+}
+
+@keyframes chart-blue {
+  from{width:0}
+  to{width:91%}
+}
+@keyframes chart-green {
+  from{width:0}
+  to{width:32.4%}
+}
+@keyframes chart-lgreen {
+  from{width:0}
+  to{width:16.99%}
+}
+@keyframes chart-orange {
+  from{width:0}
+  to{width:26.87%}
+}
+@keyframes chart-pink {
+  from{width:0}
+  to{width:32%}
+}
+
+.chart__green--t {
+  width: 67.98%;
+  animation: chart-green-t 1s;
+}
+.chart__lgreen--t {
+  width: 83.79%;
+  animation: chart-lgreen-t 1s;
+}
+.chart__orange--t {
+  width: 10.27%;
+  animation: chart-orange-t 1s;
+}
+.chart__pink--t {
+  width: 5.13%;
+  animation: chart-pink-t 1s;
+}
+
+@keyframes chart-green-t {
+  from{width:0}
+  to{width: 67.98%;}
+}
+@keyframes chart-lgreen-t {
+  from{width:0}
+  to{width: 83.79%;}
+}
+@keyframes chart-orange-t {
+  from{width:0}
+  to{width: 10.27%;}
+}
+@keyframes chart-pink-t {
+  from{width:0}
+  to{width: 5.13%;}
+}
+
+.chart__green--th {
+  width: 67.58%;
+  animation: chart-green-th 1s;
+}
+.chart__lgreen--th {
+  width: 29.64%;
+  animation: chart-lgreen-th 1s;
+}
+.chart__orange--th {
+  width: 43.87%;
+  animation: chart-orange-th 1s;
+}
+.chart__pink--th {
+  width: 21.34%;
+  animation: chart-pink-th 1s;
+}
+
+@keyframes chart-green-th {
+  from{width:0}
+  to{width: 67.58%;}
+}
+@keyframes chart-lgreen-th {
+  from{width:0}
+  to{width: 29.64%;}
+}
+@keyframes chart-orange-th {
+  from{width:0}
+  to{width: 43.87%;}
+}
+@keyframes chart-pink-th {
+  from{width:0}
+  to{width: 21.34%;}
+}
+
+.chart__green--f {
+  width: 45.45%;
+  animation: chart-green-f 1s;
+}
+.chart__lgreen--f {
+  width: 64.82%;
+  animation: chart-lgreen-f 1s;
+}
+.chart__orange--f {
+  width: 74.3%;
+  animation: chart-orange-f 1s;
+}
+.chart__pink--f {
+  width: 55.33%;
+  animation: chart-pink-f 1s;
+}
+
+@keyframes chart-green-f {
+  from{width:0}
+  to{width: 45.45%;}
+}
+@keyframes chart-lgreen-f {
+  from{width:0}
+  to{width: 64.82%;}
+}
+@keyframes chart-orange-f {
+  from{width:0}
+  to{width: 74.3%;}
+}
+@keyframes chart-pink-f {
+  from{width:0}
+  to{width: 55.33%;}
+}

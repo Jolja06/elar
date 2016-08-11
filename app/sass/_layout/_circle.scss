@@ -68,7 +68,11 @@
 }
 
 .persent {
-  font-size: 20px;  
+  font-size: 33px;  
+}
+
+.desk {
+  color: #6a6b6b;
 }
 
 .third-quarter--blue {
@@ -92,7 +96,6 @@
   animation-name: ring-lgreen;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  animate-delay: 0.3s;
 }
 .second-quarter--second-lgreen {
    transform: rotate(100deg);
@@ -114,7 +117,7 @@
   animation-name: ring-green;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  animate-delay: 0.5s;
+  
 }
 
 @keyframes ring-blue{
@@ -174,14 +177,14 @@
 
 .target__right {
   position: absolute;
-  right: 12%;
+  right: -12%;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .target__left {
   position: absolute;
-  left: 12%;
+  left: -12%;
   top: 50%;
   transform: translateY(-50%);
 }

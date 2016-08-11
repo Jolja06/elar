@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px){
+  body{
+    min-width: 1024px;
+  }
+  .wrapper {
+    min-width: 1024px;
+    padding: 3.125rem 7.81%;
+  }
+  .target {
+    width: 50%;
+    &:last-child{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .strip {
+    width: 100%;
+  }
+  .strip--orange:after {
+    right: -9.5%;
+  }
+}

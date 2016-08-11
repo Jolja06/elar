@@ -1,0 +1,29 @@
+@media screen and (max-width: 640px){
+  body{
+    min-width: 640px;
+  }
+  .wrapper {
+    min-width: 640px;
+    padding: 3.125rem 8.125%
+  }
+  .target{
+    display: none;
+    width: 100%;
+    &:first-child{
+      display: block;
+    }
+  }
+  .diagram__column {
+    width: 47%;
+    margin: 0 0 30px;
+    &:nth-child(odd) {
+      float: left;
+    }
+    &:nth-child(even) {
+      float: right;
+    }
+  }
+  .strip--orange:after {
+    right: -15.5%;
+  }
+}
